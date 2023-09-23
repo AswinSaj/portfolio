@@ -3,9 +3,9 @@ import { AiOutlineTwitter, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <div className="wrapper mt-0">
-      <div className="name text-center p-10">
-        <h1 className="text-5xl py-2 text-teal-300">Aswin Sajan</h1>
+    <div className="wrapper">
+      <div className="name text-center p-10  ">
+        <h1 className="text-5xl py-2 text-teal-300 ">Aswin Sajan</h1>
         <h1 className="text-2xl py-2">Frontend Developer</h1>
         <h1 className="text-md py-5 text-gray-800 leading-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur

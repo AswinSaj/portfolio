@@ -3,7 +3,7 @@ import { BsMoonStarsFill } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <div className="left p-10 mb-12 flex justify-between bg-slate-200 px-10">
+    <div className="left p-5  flex justify-between bg-slate-200 px-10">
       <div>
         <h1>Developed by Aswin</h1>
       </div>

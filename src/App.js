@@ -1,3 +1,4 @@
+import Spline from "./components/Spline";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="wrappe">
       <div className="nav-bar">
-        <Navbar />
+        {/* <Navbar /> */}
+        <Spline />
         <Hero />
         <About />
         <Portfolio />
