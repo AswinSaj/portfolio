@@ -1,10 +1,12 @@
-import React from "react";
-import Spline from "@splinetool/react-spline";
+import React, { lazy, Suspense } from "react";
+const Spline = lazy(() => import("@splinetool/react-spline"));
 
-export default function App() {
+export default function Scene() {
   return (
     <div className="relative h-screen">
-      <Spline scene="https://prod.spline.design/OuTgKD4-C0b6ZDln/scene.splinecode" />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Spline scene="https://prod.spline.design/OuTgKD4-C0b6ZDln/scene.splinecode" />
+      </Suspense>
     </div>
   );
 }
