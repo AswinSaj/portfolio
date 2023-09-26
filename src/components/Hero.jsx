@@ -3,13 +3,13 @@ import { AiOutlineTwitter, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapper bg-[#14061E]">
       <div className="name text-center p-10  ">
         <h1 className="text-5xl py-2 text-teal-300 ">Aswin Sajan</h1>
-        <h1 className="text-2xl py-2">Frontend Developer</h1>
-        <h1 className="text-md py-5 text-gray-800 leading-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur
-          ex eius mollitia, dolores ullam rem architecto libero corporis sint?
+        {/* <h1 className="text-2xl py-2">Frontend Developer</h1> */}
+        <h1 className="text-xl py-5  leading-8 text-white">
+          I like to craft solid and scalable frontend products with great user
+          experiences.
         </h1>
       </div>
       <div className="icons px-10 flex justify-center gap-16 text-3xl py-3 text-gray-600">
