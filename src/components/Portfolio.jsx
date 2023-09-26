@@ -1,42 +1,45 @@
 import React from "react";
+import Linkedin from "../images/Linkedin.png";
+import Movie from "../images/Movie.png";
+import Shoe from "../images/Shoe.png";
+import Weather from "../images/Weather.png";
+import { AiFillGithub } from "react-icons/ai";
+import { TbWorldWww } from "react-icons/tb";
 
 const Portfolio = () => {
   return (
-    <div>
-      <h1 className="text-center text-3xl font-medium">Portfolio</h1>
-      <div className="grid grid-cols-2 text-center px-5 pt-5 gap-5">
-        <div className=" border rounded-md shadow-lg ">
-          <img src="" alt="" />
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            nostrum, aut non dolorum ullam earum repellat aspernatur provident
-            enim quis soluta doloribus aliquid illum atque explicabo fugiat
-            tempore labore exercitationem.
-          </h1>
+    <div className="bg-[#14061E]">
+      <h1 className="text-center text-3xl font-medium text-white">Portfolio</h1>
+      <div className="grid grid-cols-1 text-center px-5 pt-5 gap-5">
+        <div className=" border rounded-md shadow-lg overflow-hidden hover:scale-105 transition duration-500  bg-[#F3F2EF] pb-2">
+          <img src={Linkedin} alt="" className="object-fit " />
+          <div className=" flex justify-around">
+            <div>
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="p-1 px-[15vw] border rounded-lg text-black  ">
+                  <AiFillGithub />
+                </button>
+              </a>
+            </div>
+            <div>
+              <button className=" p-1 px-[15vw] border rounded-lg text-black">
+                <TbWorldWww />
+              </button>
+            </div>
+          </div>
         </div>
-        <div className=" border rounded-md shadow-lg ">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, alias
-            ex soluta rem consequuntur officiis nihil distinctio reiciendis, at
-            error, nemo optio non ad dignissimos suscipit iste! Suscipit, nemo
-            ducimus!
-          </h1>
+        <div className=" border rounded-md shadow-lg overflow-hidden hover:scale-105 transition duration-500 ">
+          <img src={Movie} alt="" className="object-fit  " />
         </div>
-        <div className=" border rounded-md shadow-lg ">
-          <h1>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-            repudiandae, error expedita velit ex fugiat doloribus excepturi
-            soluta eaque, repellendus rem, doloremque sequi itaque aut accusamus
-            ipsam amet omnis molestias.
-          </h1>
+        <div className=" border rounded-md shadow-lg overflow-hidden hover:scale-105 transition duration-500 ">
+          <img src={Shoe} alt="" className="object-fit " />
         </div>
-        <div className=" border rounded-md shadow-lg ">
-          <h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-            distinctio eum, iusto rem reprehenderit adipisci? Repellat suscipit,
-            provident eum nobis velit impedit! Fugiat dolore distinctio saepe
-            dicta, illum molestias odit.
-          </h1>
+        <div className=" border rounded-md shadow-lg overflow-hidden hover:scale-105 transition duration-500 ">
+          <img src={Weather} alt="" className="object-fit" />
         </div>
         <div className=" border rounded-md shadow-lg ">
           <h1>
