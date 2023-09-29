@@ -15,7 +15,7 @@ const About = () => {
           Frontend development 👨‍💻
         </p>
         <div className=" p-10 ">
-          <div className="p-5 border rounded-md shadow-lg mb-10 text-white text-center flex flex-col items-center">
+          <div className="p-5 border rounded-xl shadow-lg mb-10 text-white text-center flex flex-col items-center">
             <img
               src={img2}
               width={100}
@@ -31,7 +31,7 @@ const About = () => {
               frameworks to deliver engaging online experiences.
             </p>
           </div>
-          <div className="p-5 border rounded-md shadow-lg mb-10 text-white text-center flex flex-col items-center">
+          <div className="p-5 border rounded-xl shadow-lg mb-10 text-white text-center flex flex-col items-center">
             <img className="" src={img3} width={100} height={100} alt="" />
             <h1 className="text-xl">UI/UX Design</h1>
             <h1>
@@ -41,7 +41,7 @@ const About = () => {
               exceptional user experiences.
             </h1>
           </div>
-          <div className="p-5 border rounded-md shadow-lg mb-10 text-white text-center flex flex-col items-center">
+          <div className="p-5 border rounded-xl shadow-lg mb-10 text-white text-center flex flex-col items-center">
             <img className="" src={react} width={100} height={100} alt="" />
             <h1 className="text-xl">Frontend Frameworks</h1>
             <h1>
