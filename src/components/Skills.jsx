@@ -6,12 +6,12 @@ import react from "../images/React-icon.svg.png";
 
 const About = () => {
   return (
-    <div className="wrapper bg-[#14061E]" id="skills">
+    <div className="wrapper bg-[#14061E] pb-20 pt-20 " id="skills">
       <h1 className="text-teal-300 text-3xl font-medium text-center pt-2">
         Skills
       </h1>
       <div className="text-center">
-        <div className=" p-10 px-10 md:grid grid-cols-3 gap-3 ">
+        <div className=" p-10 px-10 md:grid grid-cols-3 gap-3 md:px-[10vw] ">
           <div className="p-5 border rounded-xl shadow-lg mb-10 text-white text-center flex flex-col items-center">
             <img
               src={web}

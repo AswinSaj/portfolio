@@ -5,7 +5,7 @@ import pic from "../images/pic.jpg";
 const About = () => {
   return (
     <div className="wrapper bg-[#14061E] pt-20 pb-20" id="about">
-      <div className="pt-5 px-5 md:flex flex-row-reverse  justify-around">
+      <div className="pt-5 px-5 md:flex flex-row-reverse  justify-around md:pb-10">
         <div>
           <h1 className="text-3xl font-medium pt-4 text-teal-300 text-center ">
             About
@@ -25,7 +25,7 @@ const About = () => {
         <div className=" md:flex-col md:flex md:items-center md:justify-center ">
           <div className="relative mx-auto rounded-full w-40 h-50 overflow-hidden ">
             <img
-              className="w-full h-full object-cover scale-120 "
+              className="w-full h-full object-cover scale-125 "
               src={pic}
               alt=""
             />
