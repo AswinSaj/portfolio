@@ -25,7 +25,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="bg-[#14061E]">
+    <div className="bg-[#14061E] pt-20 " id="contact">
       <div className="contact-page">
         <div className="text-center ">
           <h1 className="text-3xl font-medium text-teal-300 pt-5">

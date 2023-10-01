@@ -3,7 +3,7 @@ const Spline = lazy(() => import("@splinetool/react-spline"));
 
 export default function Scene() {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen w-[98.8vw]">
       <Suspense fallback={<div>Loading...</div>}>
         <Spline scene="https://prod.spline.design/OuTgKD4-C0b6ZDln/scene.splinecode" />
       </Suspense>

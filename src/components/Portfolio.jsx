@@ -8,11 +8,11 @@ import { TbWorldWww } from "react-icons/tb";
 
 const Portfolio = () => {
   return (
-    <div className="bg-[#14061E]">
+    <div className="bg-[#14061E] " id="portfolio">
       <h1 className="text-center text-3xl font-medium text-teal-300 pb-5">
         Portfolio
       </h1>
-      <div className="text-center px-5 md:grid grid-cols-3 gap-3">
+      <div className="text-center px-10 md:grid grid-cols-3 gap-3">
         <div className=" mb-5 border rounded-md shadow-lg overflow-hidden hover:scale-105 transition duration-500  bg-[#F3F2EF] ">
           <img src={Linkedin} alt="" className="object-fit " />
           <div className=" flex justify-around">

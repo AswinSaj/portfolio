@@ -1,53 +1,57 @@
 import React from "react";
-import img1 from "../images/animated.png";
-import img2 from "../images/code.png";
-import img3 from "../images/design.png";
-import react from "../images/React-icon.svg.png";
+import { AiOutlineTwitter, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import pic from "../images/pic.jpg";
 
 const About = () => {
   return (
-    <div className="wrapper bg-[#14061E]">
-      <h1 className="text-teal-300 text-3xl font-medium text-center pt-2">
-        Skills
-      </h1>
-      <div className="text-center">
-        <div className=" p-10 px-10 md:grid grid-cols-3 gap-3 ">
-          <div className="p-5 border rounded-xl shadow-lg mb-10 text-white text-center flex flex-col items-center">
+    <div className="wrapper bg-[#14061E] pt-20 pb-20" id="about">
+      <div className="pt-5 px-5 md:flex flex-row-reverse  justify-around">
+        <div>
+          <h1 className="text-3xl font-medium pt-4 text-teal-300 text-center ">
+            About
+          </h1>
+          <p className="leading-8 pt-2 px-5 text-lg text-white md:max-w-lg mx-auto pb-5 text-center">
+            As a Junior Front-End Developer, I bring a diverse skill set to the
+            table, including proficiency in HTML, CSS, JavaScript, React,
+            Firebase and Tailwind. My strength lies in creating and sustaining
+            responsive websites that prioritize user experience. I specialize in
+            constructing interactive and captivating user interfaces by
+            producing efficient, well-structured code and leveraging the latest
+            development tools and methods. My ability to work effectively within
+            cross-functional teams adds value by contributing to the creation of
+            exceptional web applications.
+          </p>
+        </div>
+        <div className=" md:flex-col md:flex md:items-center md:justify-center ">
+          <div className="relative mx-auto rounded-full w-40 h-50 overflow-hidden ">
             <img
-              src={img2}
-              width={100}
-              height={100}
+              className="w-full h-full object-cover scale-120 "
+              src={pic}
               alt=""
-              className="mx-auto"
             />
-            <h1 className="text-2xl mt-3 ">Web Development</h1>
-            <p className="mt-3 text-lg">
-              As a proficient web developer, I have extensive experience in
-              creating responsive and visually appealing websites. My expertise
-              includes HTML, CSS, JavaScript, and various web development
-              frameworks to deliver engaging online experiences.
-            </p>
           </div>
-          <div className="p-5 border rounded-xl shadow-lg mb-10 text-white text-center flex flex-col items-center">
-            <img className="" src={img3} width={100} height={100} alt="" />
-            <h1 className="text-2xl mt-3">UI/UX Design</h1>
-            <h1 className="mt-3 text-lg">
-              With a focus on user-centered design, I create intuitive and
-              visually appealing user interfaces using Figma. My expertise
-              includes collaboration with UI/UX developers to deliver
-              exceptional user experiences.
-            </h1>
-          </div>
-          <div className="p-5 border rounded-xl  shadow-lg mb-10 text-white text-center flex flex-col items-center">
-            <img className="" src={react} width={100} height={100} alt="" />
-            <h1 className="text-2xl mt-6">Frontend Frameworks</h1>
-            <h1 className="mt-3 text-lg">
-              Proficient in frontend frameworks such as React and Vue.js, I
-              develop dynamic and interactive web applications. My skills
-              include building responsive and performant interfaces, handling
-              state management, and integrating APIs for seamless user
-              interactions.
-            </h1>
+          <div className="icons px-10 pt-5 flex justify-center gap-16 text-3xl py-3 text-gray-600">
+            <a
+              href="https://twitter.com/immensitysquare"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineTwitter className="hover:text-[#1DA1F2]" />
+            </a>
+            <a
+              href="https://github.com/AswinSaj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillGithub className="hover:text-white" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aswin-sajan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillLinkedin className="hover:text-[#0077b5]" />
+            </a>
           </div>
         </div>
       </div>

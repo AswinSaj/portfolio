@@ -1,11 +1,12 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
 import GridLoader from "react-spinners/GridLoader";
-import About from "./components/About";
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Hero from "./components/Hero";
+import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Hi from "./components/Hi";
+import { BrowserRouter } from "react-router-dom";
 
 const LazySpline = lazy(() => import("./components/Spline"));
 
@@ -34,19 +35,21 @@ function Loading() {
 
 function App() {
   return (
-    <div className="wrappe">
-      <div className="nav-bar">
-        <Navbar />
-        <Suspense fallback={<div>Loading Spline...</div>}>
-          <LazySpline />
-        </Suspense>
-        <Hi />
-        <Hero />
-        <About />
-        <Portfolio />
-        <Contact />
+    <BrowserRouter>
+      <div className="wrappe">
+        <div className="nav-bar">
+          <Navbar />
+          <Suspense fallback={<div>Loading Spline...</div>}>
+            <LazySpline />
+          </Suspense>
+          <Hi />
+          <About />
+          <Skills />
+          <Portfolio />
+          <Contact />
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
