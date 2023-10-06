@@ -36,7 +36,7 @@ function Loading() {
 function App() {
   return (
     <BrowserRouter>
-      <div className="wrappe">
+      <div className="wrapper w-screen">
         <div className="nav-bar">
           <Navbar />
           <Suspense fallback={<div>Loading Spline...</div>}>

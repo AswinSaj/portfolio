@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
-    <div className="md:py-5 md:px-10 py-5 px-3 bg-[#040919] sticky z-10 top-0 bg-opacity-90 ">
+    <div className="md:py-5 md:px-10 py-5  bg-[#040919] sticky z-10 top-0 bg-opacity-90 px-0">
       <div className="flex justify-between">
         <div>
           <h1 className="text-white text-2xl md:text-3xl font-bold pl-7 hover:animate-wiggle">
