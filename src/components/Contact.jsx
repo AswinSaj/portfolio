@@ -39,7 +39,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                name="your_name"
+                name="from_name"
                 className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"
               />
             </div>
@@ -47,7 +47,7 @@ const Contact = () => {
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                name="your_email"
+                name="from_email"
                 className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"
               />
             </div>

@@ -1,16 +1,17 @@
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
-    <div className="py-10   bg-[#040919] px-10">
-      <div className="flex justify-between ">
-        <div className="flex justify-between ">
-          <h1 className="text-white text-2xl font-bold pl-7">Aswin.dev</h1>
+    <div className="md:py-5 md:px-10 py-5 px-3 bg-[#040919] sticky z-10 top-0 bg-opacity-90 ">
+      <div className="flex justify-between">
+        <div>
+          <h1 className="text-white text-2xl md:text-3xl font-bold pl-7 hover:animate-wiggle">
+            Aswin.dev
+          </h1>
         </div>
 
-        <ul className="md:flex md:gap-7 md:items-center  md:z-auto md:static  w-40 md:w-auto md:opacity-100 opacity-0 bg-black text-white top-[-400px] transition-all ease-in duration-500">
+        <ul className="md:flex md:gap-7 md:items-center md:w-auto  flex items-center gap-3 text-sm md:text-base  text-white">
           <Link to="#about">
             <li className="hover:text-[#5EA5C1]">About</li>
           </Link>
@@ -21,14 +22,11 @@ const Navbar = () => {
             <li className="hover:text-[#5EA5C1]">Portfolio</li>
           </Link>
           <Link to="#contact">
-            <li className=" cursor-pointer border text-white px-4 py-1 rounded-lg hover:bg-[#5EA5C1] hover:text-black ">
+            <li className="cursor-pointer border text-white md:px-4 md:py-1 px-1 py-0 rounded-lg hover:bg-[#5EA5C1] hover:text-black">
               Contact
             </li>
           </Link>
         </ul>
-        <span className="text-white md:hidden block cursor-pointer mt-[10px]">
-          <GiHamburgerMenu className="" name="menu" onclick="Menu(this)" />
-        </span>
       </div>
     </div>
   );
